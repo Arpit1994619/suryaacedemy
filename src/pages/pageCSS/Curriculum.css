@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.curri{
+    width:100%;
+    height:auto;
+    margin-top: 120px;
+}
+
+
+.curri1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    padding: 0 10px;
+}
+.curri1 h1{
+    text-align: center;
+    font-size: 45px;
+}
+.curri1_p{
+    text-align: center;
+    padding: 20px 130px;
+    color:#7f7f7f;
+    line-height: 22px;
+}
+.curri1_div{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin: 30px 0px;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-wrap: wrap; 
+}
+.curri1_div_div{
+    width:390px;
+    height:auto;
+    border:1px solid #ccc;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+.curri1_div_div img{
+    width:17%;
+}
+.curri1_div_div b{
+    padding: 25px 0px;
+    display: block;
+}
+.curri1_div_div p{
+    color:#7f7f7f;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+
+
+
+
+/* responsive design start */
+@media(max-width:500px){
+.curri{
+    width:100%;
+    height:auto;
+    margin-top: 80px;
+}
+
+
+.curri1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 40px;
+}
+.curri1 h1{
+    text-align:left;
+    font-size: 33px;
+}
+.curri1_p{
+    text-align:justify;
+    padding: 10px 0px;
+}
+.curri1_div{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin: 0px 0px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    /*flex-direction: column;*/
+     flex-wrap: wrap; 
+}
+.curri1_div_div{
+    width:99%;
+    height:auto;
+    margin-top:20px; 
+   
+}
+
+}
+ 
+
+@media (min-width: 501px) and (max-width: 992px) {
+.curri1_p{
+    text-align:justify;
+    padding: 10px 0px;
+}
+.curri1_div {
+    width: 100%;
+    height: auto;
+    /*border: 1px solid red;*/
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+}
+.curri1_div_div{
+    width:99%;
+    height:auto;
+    margin-top:20px;
+}
+}
+
+
+
+
+
+
+/* responsive design end */

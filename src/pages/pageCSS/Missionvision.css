@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mission{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 120px;
+}
+
+
+.mission1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 60px;
+    padding: 0 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission1 h1{
+    font-size: 45px;
+}
+.mission1 p{
+    margin-top: 20px;
+    text-align: center;
+    color:#7f7f7f;
+}
+
+
+.mission2{
+    width:100%;
+    height:auto;
+    /*border: 1px solid red;*/
+    margin-top: 70px;
+}
+
+
+.mission3{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission3 h1{
+    font-size: 45px;
+}
+.mission3 p{
+    margin-top: 20px;
+    text-align: center;
+    color:#7f7f7f;
+}
+
+
+.mission4{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission4_div{
+    width:33.3%;
+    height:360px;
+    border:1px solid rgb(174, 173, 173);
+    padding: 20px;
+}
+.mission4_div b{
+    padding: 15px 0px;
+    display: block;
+    color:rgb(68, 67, 67);
+}
+.mission4_div p{
+    text-align:justify;
+    font-size: 16px;
+    color:#7f7f7f;
+}
+
+
+.mission5{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    padding: 0 10px;
+    display: flex;
+}
+.mission5_div1{
+    width:50%;
+    height:auto;
+    /*border:1px solid blue;*/
+}
+.mission5_div1 h1{
+    font-size: 45px;
+}
+.mission5_div1 p{
+    color:#7f7f7f;
+    margin-top: 20px;
+}
+.mission5_btn{
+    margin-top: 20px;
+    background-color:#fba958;
+    padding: 10px 20px;
+    color:white;
+    transition: all 0.4s linear;
+}
+.mission5_btn:hover{
+    background-color:#FF0A0A;
+    cursor: pointer;
+}
+.mission5_div2{
+    width:50%;
+    height:auto;
+    /*border:1px solid blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission5_top{
+    width:100%;
+    height:auto;
+    /*border:1px solid black;*/
+    display:flex;
+    margin-bottom: 20px;
+}
+.mission5_top1{
+   width:45%;
+   height:auto;
+   /*border:1px solid green;*/
+   box-shadow: 1px 0px 4px gray;
+   border-radius: 5px;
+   padding: 15px;
+   margin-left: 30px;
+}
+.mission5_top1 b{
+    display:block;
+    padding: 10px 0px;
+}
+.mission5_top1 p{
+    color:#7f7f7f;
+}
+
+
+
+/* responsive design start */
+@media(max-width:992px){
+.mission{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 100px;
+}
+
+
+.mission1{
+    width:100%;
+    height:auto;
+}
+.mission1 p{
+    text-align: justify;
+}
+
+
+.mission2{
+    width:100%;
+    height:auto;
+    /*border: 1px solid red;*/
+    margin-top: 50px;
+}
+
+
+.mission3{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 40px;
+    padding: 0 10px;
+}
+.mission3 p{
+    text-align:justify;
+    color:#7f7f7f;
+}
+
+
+.mission4{
+    width:100%;
+    height:auto;
+    padding: 0 10px;
+    /*border:1px solid red;*/
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission4_div{
+    width:100%;
+    height:auto;
+   padding: 20px;
+}
+
+
+.mission5{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission5_div1{
+    width:100%;
+    height:auto;
+    /*border:1px solid blue;*/
+}
+.mission5_div1 p{
+    text-align:justify;
+}
+.mission5_div2{
+    width:100%;
+    height:auto;
+    margin-top: 40px;
+    /*border:1px solid blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission5_top1{
+    width:50%;
+    height:auto;
+    /*border:1px solid green;*/
+    box-shadow: 1px 0px 4px gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 0px;
+    margin-right: 20px;
+ }
+
+
+}
+
+/* responsive design end */

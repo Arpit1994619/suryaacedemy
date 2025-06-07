@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.president{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 120px;
+}
+
+
+.president1{
+    width: 100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    padding: 0 10px;
+}
+.president1 h1{
+    text-align: center;
+    font-size: 45px;
+}
+.president1_div{
+    width:100%;
+    height:auto;
+    /*border:1px solid blue;*/
+    margin-top: 30px;
+    display: flex;
+}
+.president1_div_div{
+    width:50%;
+    height:auto;
+    /*border:1px solid black;*/
+}
+.president1_div_div img{
+    width:90%;
+    height:430px;
+}
+.president1_div_div p{
+    color:#7f7f7f;
+    padding-bottom: 15px;
+}
+
+
+.president2{
+    width:100%;
+    height:320px;
+    /*border:1px solid red;*/
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.president2_slider{
+    width:96%;
+   height:auto;
+   /*border:1px solid blue;*/
+   position: relative;
+   z-index: 0;
+}
+.president2_slider_div{
+   width:200px;
+   height:auto;
+   border:1px solid rgb(187, 186, 186);
+   padding: 15px;
+}
+.president2_slider .slick-dots li button::before{
+   font-size: 15px;
+   border: 3px solid black;
+   border-radius: 50%;
+   color:#F7A04F !important;
+   margin-top: 15px;
+}
+.president2_slider .slick-slide{   
+   padding:0 10px;
+ }
+.president2_slider .slick-prev:before{  
+   color:red;
+   font-size: 0px;
+   position: absolute;
+   left:40px;   
+}
+.president2_slider .slick-next:before{
+   color:black;
+   font-size: 0px;
+   position: absolute;
+   right:30px;
+}
+.president2_slider_div img{
+   width:100%;
+   transform: scale(1);
+   transition: all 0.3s linear;
+}
+.president2_slider_div img:hover{
+   transform: scale(1.14);
+}
+
+
+
+/* responsive design start */
+@media(max-width:992px){
+.president img{
+    width:100%;
+    height:auto;
+}
+
+
+.president1{
+    width: 100%;
+    height:auto;
+    margin-top: 50px;
+}
+.president1 h1{
+    text-align: left;
+    font-size: 35px;
+}
+.president1_div{
+    width:100%;
+    height:auto;
+    /*border:1px solid blue;*/
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.president1_div_div{
+    width:100%;
+    height:auto;
+}
+.president1_div_div img{
+    width:100%;
+}
+.president1_div_div p{
+    text-align: justify;
+}
+
+
+.president2{
+    width:100%;
+    height:430px;
+    border: 1px solid white; 
+    margin-top: 0px;
+}
+.president2_slider{
+    width:90%;
+}
+
+
+
+}
+
+
+/* responsive design end */
