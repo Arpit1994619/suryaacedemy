@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 import { useEffect, useRef } from 'react';
 import $ from 'jquery';
 
-import './componentsCSS/Header.css'
+import './componentsCSS/header.css'
 
 
 function Header() {
