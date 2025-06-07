@@ -436,7 +436,7 @@ function Header() {
                      <li><NavLink to='ourpedagogy' onClick={close}>Our Pedagogy</NavLink></li>
                      <li><NavLink to='presidentmass' onClick={close}>President Message</NavLink></li>
                      <li><NavLink to='vicepresidentmess' onClick={close}>Vice President Message</NavLink></li>
-                     <li><a href="#">Principal Message</a></li>
+                     <li><a href="#">Principal Messages</a></li>
                      <li><a href="#">Parents Testimonials</a></li>
                      <li><a href="#">Alumni Testimonials</a></li>
                    </ul>
