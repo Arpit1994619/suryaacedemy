@@ -20,7 +20,7 @@ import Testdateresult from './pages/Testdateresult.jsx'
 import Feestructure from './pages/Feestructure.jsx'
 import Curriculum from './pages/Curriculum.jsx'
 
-import Footer from './components/footer.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
