@@ -11,3 +11,78 @@
     margin-top: 120px;
 }
 
+
+.scholer1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    padding: 0 10px;
+}
+.scholer1 h1{
+    font-size: 45px;
+    text-align: center;
+}
+.scholer1 p{
+     color:#7f7f7f;
+     padding: 10px 110px;
+     text-align: center;
+}
+.scholer1 table{
+    width:81%;
+    /*border:3px solid blue;*/
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.scholer1 table th{
+    background-color: #F7A04F;
+    padding: 10px 5px;
+    font-size: 17px;
+    color:rgb(66, 66, 66);
+}
+.scholer1 table td{
+    padding: 15px 5px;
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+    color:#7f7f7f;
+}
+
+
+
+/* responsive design start */
+@media(max-width:992px){
+.scholar{
+    width:100%;
+    height:auto;
+    margin-top: 80px;
+} 
+
+
+.scholer1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 50px;
+}
+.scholer1 h1{
+    font-size: 30px;
+    text-align: left;
+}
+.scholer1 p{
+     color:#7f7f7f;
+     padding: 10px 0px;
+     text-align: justify;
+}
+.scholer1 table{
+    width:100%;
+}
+
+
+
+
+
+}
+
+
+/* responsive design end */
