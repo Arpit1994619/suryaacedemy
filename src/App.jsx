@@ -19,6 +19,8 @@ import Onlineragistration from './pages/Onlineragistration.jsx'
 import Testdateresult from './pages/Testdateresult.jsx'
 import Feestructure from './pages/Feestructure.jsx'
 import Curriculum from './pages/Curriculum.jsx'
+import Smartclass from './pages/Smartclass.jsx'
+import Scholarship from './pages/Scholarship.jsx'
 
 import Footer from './components/Footer.jsx'
 
@@ -44,6 +46,8 @@ function App() {
       <Route path="/testdateresult" element={<Testdateresult/>}></Route>
       <Route path="/feestructure" element={<Feestructure/>}></Route>
       <Route path="/curriculum" element={<Curriculum/>}></Route>
+      <Route path="/smartclass" element={<Smartclass/>}></Route>
+       <Route path="/scholarship" element={<Scholarship/>}></Route>
       </Routes>
 
       <Footer/>

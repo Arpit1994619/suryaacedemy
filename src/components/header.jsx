@@ -361,8 +361,8 @@ function Header() {
              <li><a href="#">Academics</a>
                  <ul>
                     <li><NavLink to='curriculum'>Curriculum</NavLink></li>
-                    <li><a href="#">Smart Class Rooms</a></li>
-                    <li><a href="#">Scholarships</a></li>
+                    <li><NavLink to='smartclass'>Smart Class Rooms</NavLink></li>
+                    <li><NavLink to='scholarship'>Scholarships</NavLink></li>
                     <li><a href="#">Competent faculty and staff</a></li>
                     <li><a href="#">Our Achievers</a></li>
                     <li><a href="#">Pre-primary Level</a></li>
@@ -461,7 +461,7 @@ function Header() {
                 <li ref={academicsClick}><a href="#">Academics</a><i id="icon4" className="ri-add-line"></i>
                   <ul ref={academicsShow}>
                     <li><NavLink to='curriculum' onClick={close}>Curriculum</NavLink></li>
-                    <li><a href="#">Smart Class Rooms</a></li>
+                    <li><NavLink to='smartclass' onClick={close}>Smart Class Rooms</NavLink></li>
                     <li><a href="#">Scholarships</a></li>
                     <li><a href="#">Competent faculty and staff</a></li>
                     <li><a href="#">Our Achievers</a></li>
