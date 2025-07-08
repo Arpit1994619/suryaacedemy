@@ -16,28 +16,32 @@ import './componentsCSS/header.css'
 function Header() {
 
   /* this code scroll up header hide and scroll down header show  start */
-     const [showHeader, setShowHeader] = useState(true);
-     const [lastScrollY, setLastScrollY] = useState(0);
-     const controlHeader = () => {
-        if (window.scrollY > lastScrollY) {
-      // scrolling down
-         setShowHeader(false);
-        } else {
-          // scrolling up
-         setShowHeader(true);
-       }
-      setLastScrollY(window.scrollY);
-  };
- useEffect(() => {
-    window.addEventListener('scroll', controlHeader);
+    const [showHeader, setShowHeader] = useState(true);
+    const lastScrollY = useRef(0);
 
+   const controlHeader = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY.current && currentScrollY > 60) 
+      {
+      // Scrolling down and not at top
+      setShowHeader(false);
+     } 
+    else
+    {
+      // Scrolling up
+      setShowHeader(true);
+    }
+    lastScrollY.current = currentScrollY;
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", controlHeader);
     return () => {
-      window.removeEventListener('scroll', controlHeader);
+      window.removeEventListener("scroll", controlHeader);
     };
-  }, [lastScrollY]);
+  }, []);
 
 /* this code scroll up header hide and scroll down header show  end */
-
+  
 
     function menu(){
         var a = document.getElementsByClassName("menu_icon_click")[0];
@@ -53,7 +57,6 @@ function Header() {
       var a = document.getElementsByClassName("after_show")[0];
            a.style.display = "none";
     }
-
 
 
        //use of jquery for mobile menu start.
@@ -288,7 +291,6 @@ function Header() {
           setShowBox(true);
         }, 2000); // Delay 3 seconds
       };
-      // If already loaded (e.g., SPA navigation), call immediately
       if (document.readyState === 'complete') {
         handleLoad();
       } else {
@@ -363,9 +365,9 @@ function Header() {
                     <li><NavLink to='curriculum'>Curriculum</NavLink></li>
                     <li><NavLink to='smartclass'>Smart Class Rooms</NavLink></li>
                     <li><NavLink to='scholarship'>Scholarships</NavLink></li>
-                    <li><a href="#">Competent faculty and staff</a></li>
-                    <li><a href="#">Our Achievers</a></li>
-                    <li><a href="#">Pre-primary Level</a></li>
+                    <li><NavLink to='competentfacultystaff'>Competent faculty and staff</NavLink></li>
+                    <li><NavLink to='ourachiever'>Our Achievers</NavLink></li>
+                    <li><NavLink to='preprimary'>Pre-primary Level</NavLink></li>
                     <li><a href="#">Primary Level</a></li>
                     <li><a href="#">Middle Level</a></li>
                     <li><a href="#">Secondary Level</a></li>
@@ -462,10 +464,10 @@ function Header() {
                   <ul ref={academicsShow}>
                     <li><NavLink to='curriculum' onClick={close}>Curriculum</NavLink></li>
                     <li><NavLink to='smartclass' onClick={close}>Smart Class Rooms</NavLink></li>
-                    <li><a href="#">Scholarships</a></li>
-                    <li><a href="#">Competent faculty and staff</a></li>
-                    <li><a href="#">Our Achievers</a></li>
-                    <li><a href="#">Pre-primary Level</a></li>
+                    <li><NavLink to='scholarship' onClick={close}>Scholarships</NavLink></li>
+                    <li><NavLink to='competentfacultystaff' onClick={close}>Competent faculty and staff</NavLink></li>
+                    <li><NavLink to='ourachiever' onClick={close}>Our Achievers</NavLink></li>
+                    <li><NavLink to='preprimary' onClick={close}>Pre-primary Level</NavLink></li>
                     <li><a href="#">Primary Level</a></li>
                     <li><a href="#">Middle Level</a></li>
                     <li><a href="#">Secondary Level</a></li>
@@ -508,6 +510,13 @@ function Header() {
    </div>
 </div>
 
+
+
+{/* this code of change language start */}
+<h1 style={{marginTop:'120px'}} className='language_change'>Change Language:</h1>
+<div id="google_translate_element"></div>
+{/* this code of change language end  */}
+{/* and use of the 2script index.html line no. 22 to 28*/}
 
 
 

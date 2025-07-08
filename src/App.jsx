@@ -21,6 +21,9 @@ import Feestructure from './pages/Feestructure.jsx'
 import Curriculum from './pages/Curriculum.jsx'
 import Smartclass from './pages/Smartclass.jsx'
 import Scholarship from './pages/Scholarship.jsx'
+import Competentfacultystaff from './pages/Competentfacultystaff.jsx'
+import Ourachiever from './pages/Ourachiever.jsx'
+import Preprimary from './pages/Preprimary.jsx'
 
 import Footer from './components/Footer.jsx'
 
@@ -47,7 +50,10 @@ function App() {
       <Route path="/feestructure" element={<Feestructure/>}></Route>
       <Route path="/curriculum" element={<Curriculum/>}></Route>
       <Route path="/smartclass" element={<Smartclass/>}></Route>
-       <Route path="/scholarship" element={<Scholarship/>}></Route>
+      <Route path="/scholarship" element={<Scholarship/>}></Route>
+      <Route path="/competentfacultystaff" element={<Competentfacultystaff/>}></Route>
+      <Route path="/ourachiever" element={<Ourachiever/>}></Route>
+      <Route path="/preprimary" element={<Preprimary/>}></Route>
       </Routes>
 
       <Footer/>

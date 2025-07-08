@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.pre{
+    width:100%;
+    height:auto;
+}
+
+
+.pre1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 70px;
+    padding: 0 10px;
+}
+.pre1 h1{
+    font-size: 45px;
+    text-align: center;
+}
+.pre1 p{
+    text-align: center;
+    color:#7f7f7f;
+    margin-top: 30px;
+    padding:0px 120px;
+}
+
+
+.pre2{
+    width:100%;
+    height:auto;
+    margin-top: 70px;
+    /*border:1px solid red;*/
+    padding: 0 10px;
+    display: flex;
+}
+.pre2_div1{
+    width:40%;
+    height:auto;
+    /*border:1px solid blue;*/
+}
+.pre2_div2{
+    width:60%;
+    height:auto;
+    /*border:1px solid blue;*/
+}
+.pre2_div2 h1{
+    font-size: 25px;
+    color:#F7A04F;
+}
+.pre2_div2 p{
+    color:#7f7f7f;
+    margin-top: 15px;
+}
+.pre2_div2 ul{
+    list-style-type:decimal-leading-zero;
+    margin-left: 27px;
+    color:#7f7f7f;
+}
+.pre2_div2 li{
+    margin-top: 10px;
+}
+.pre2_div2 li::marker{
+    color:red;
+}
+
+
+.pre3{
+    width:100%;
+    height:auto;
+    margin-top: 70px;
+    /*border:1px solid red;*/
+    padding: 0px 10px;
+}
+.pre3 h1{
+    font-size: 25px;
+    color:#F7A04F;
+}
+.pre3 p{
+    color:#7f7f7f;
+    margin-top: 20px;
+}
+.pre3 ul{
+    list-style-type:decimal-leading-zero;
+    color:#7f7f7f;
+     margin-left: 27px;
+}
+.pre3 li{
+     margin-top: 10px;
+}
+.pre3 li::marker{
+    color:red;
+}
+.pre3 b{
+    padding: 20px 0px;
+    display: block;
+}
+
+
+
+/* responsive design start */
+@media(max-width:500px){
+.pre1{
+    width:100%;
+    height:auto;
+    /*border:1px solid red;*/
+    margin-top: 50px;
+}
+.pre1 h1{
+    font-size: 25px;
+    text-align: left;
+}
+.pre1 p{
+    text-align:justify;
+    margin-top: 20px;
+    padding:0px 0px;
+}
+
+
+.pre2{
+    width:100%;
+    height:auto;
+    margin-top: 50px;
+    /*border:1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pre2_div1{
+    width:100%;
+    height:auto;
+}
+.pre2_div1 img{
+    width:100%;
+}
+.pre2_div2{
+    width:100%;
+    height:auto;
+    padding-top: 15px;
+}
+
+
+.pre3{
+    width:100%;
+    height:auto;
+    margin-top: 50px;
+    /*border:1px solid red;*/
+    padding: 0px 10px;
+}
+
+}
+
+@media(min-width:500px) and (max-width:992px){
+.pre1 h1{
+    font-size: 30px;
+    text-align: left;
+}
+.pre1 p{
+    text-align:justify;
+    margin-top: 20px;
+    padding:0px 0px;
+}
+
+
+}
+
+
+
+/* responsive design end */
